@@ -1,4 +1,4 @@
-import Repo from "./Repo";
+import Repo from "./components/Repo";
 import "./App.css";
 
 function App() {
