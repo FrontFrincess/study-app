@@ -1,7 +1,7 @@
 import { Octokit } from "octokit";
 
-const KEY = process.env.GITHUB_ACCESS_KEY;
+const API_KEY = process.env.REACT_APP_GITHUB_ACCESS_KEY;
 
 export const octokitInstance = new Octokit({
-  auth: KEY,
+  auth: API_KEY,
 });
