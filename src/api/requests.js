@@ -1,7 +1,7 @@
 import { octokitInstance } from "./instance";
 import { GITHUB_API_INFO } from "../constants";
 
-export const getRepoFolders = async (path) => {
+export const getRepoContents = async (path) => {
   const res = octokitInstance.request(
     "GET /repos/{owner}/{repo}/contents/{path}",
     {
