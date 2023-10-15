@@ -10,12 +10,16 @@ export default function Repo() {
       console.log(res);
       setPaths(res.data);
     });
+    console.log(paths);
   }, []);
+
   return (
     <div className="repo-container">
       <div className="folder-list">
         {paths.map((path) => (
-          <button key={path.name}>{path.path}</button>
+          <a href={`/${path.path}`} key={path.name}>
+            {path.path}
+          </a>
         ))}
       </div>
     </div>

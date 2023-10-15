@@ -1,12 +1,14 @@
-import Repo from "./components/Repo";
+import Nav from "./components/Nav";
+import Routers from "./pages/Routers";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h2>Front Study</h2>
-      <hr />
-      <Repo />
+      {/* 공통 영역 */}
+      <Nav />
+      {/* 페이지 변환 부분 */}
+      <Routers />
     </div>
   );
 }
